@@ -1,6 +1,6 @@
 === Delight Cookie Banner ===
-Contributors: delightplugins
-Donate link: https://delightplugins.com
+Contributors: PC Delight
+Donate link: https://pcdelight.ch
 Tags: cookies, gdpr, privacy, banner, woocommerce
 Requires at least: 6.0
 Tested up to: 6.8
