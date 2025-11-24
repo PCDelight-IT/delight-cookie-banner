@@ -1,0 +1,149 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Delight Cookie Banner 1.0.0\n"
+"Language: it_IT\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "Delight Cookie Banner"
+msgstr "Delight Cookie Banner"
+
+msgid "Cookie Banner Settings"
+msgstr "Impostazioni del banner dei cookie"
+
+msgid "Customize the appearance and texts of your cookie banner."
+msgstr "Personalizza l’aspetto e i testi del tuo banner dei cookie."
+
+msgid "Background Color"
+msgstr "Colore di sfondo"
+
+msgid "Text Color"
+msgstr "Colore del testo"
+
+msgid "Accept Button Background"
+msgstr "Sfondo del pulsante Accetta"
+
+msgid "Accept Button Text Color"
+msgstr "Colore del testo del pulsante Accetta"
+
+msgid "Reject Button Background"
+msgstr "Sfondo del pulsante Rifiuta"
+
+msgid "Reject Button Text Color"
+msgstr "Colore del testo del pulsante Rifiuta"
+
+msgid "Banner Position"
+msgstr "Posizione del banner"
+
+msgid "Banner Message"
+msgstr "Messaggio del banner"
+
+msgid "Accept Button Text"
+msgstr "Testo del pulsante Accetta"
+
+msgid "Reject Button Text"
+msgstr "Testo del pulsante Rifiuta"
+
+msgid "Privacy Policy Page"
+msgstr "Pagina della politica sulla privacy"
+
+msgid "Show Footer Link for Consent Change"
+msgstr "Mostra il link nel footer per modificare il consenso"
+
+msgid "Top"
+msgstr "In alto"
+
+msgid "Middle"
+msgstr "Centrale"
+
+msgid "Bottom"
+msgstr "In basso"
+
+msgid "Select a page"
+msgstr "Seleziona una pagina"
+
+msgid "Save Settings"
+msgstr "Salva impostazioni"
+
+msgid "Accept"
+msgstr "Accetta"
+
+msgid "Reject"
+msgstr "Rifiuta"
+
+msgid "Privacy Policy"
+msgstr "Informativa sulla privacy"
+
+msgid "Change cookie settings"
+msgstr "Modifica le impostazioni dei cookie"
+
+msgid "Cookie consent banner"
+msgstr "Banner di consenso ai cookie"
+
+msgid "Customize the appearance, text, and behavior of your cookie banner. The live preview updates instantly on the right."
+msgstr "Personalizza l’aspetto, il testo e il comportamento del tuo banner dei cookie. L’anteprima dal vivo a destra si aggiorna immediatamente."
+
+msgid "This preview reflects your current settings. Hover the buttons to see hover colors. Save to persist changes."
+msgstr "Questa anteprima riflette le impostazioni attuali. Passa il mouse sui pulsanti per vedere i colori al passaggio. Salva per applicare le modifiche."
+
+msgid "Automatically display a “Change cookie settings” link in the footer. You can also insert the same link anywhere on your site using the [dcb_open] shortcode, or add a reset link with [dcb_reset]."
+msgstr "Mostra automaticamente il link “Modifica impostazioni cookie” nel piè di pagina. Puoi anche inserire lo stesso link in qualsiasi punto del sito con lo shortcode [dcb_open] oppure aggiungere un link di ripristino con [dcb_reset]."
+
+msgid "Alternatively, use [dcb_open] or [dcb_reset]."
+msgstr "In alternativa, utilizza [dcb_open] o [dcb_reset]."
+
+msgid "Settings have been reset to defaults."
+msgstr "Le impostazioni sono state ripristinate ai valori predefiniti."
+
+msgid "Reset all settings to their installation defaults?"
+msgstr "Ripristinare tutte le impostazioni ai valori predefiniti?"
+
+msgid "Reset to defaults"
+msgstr "Ripristina impostazioni predefinite"
+
+msgid "You do not have permission to perform this action."
+msgstr "Non hai l’autorizzazione per eseguire questa azione."
+
+msgid "Live Preview"
+msgstr "Anteprima dal vivo"
+
+msgid "Accept Button Background"
+msgstr "Sfondo pulsante Accetta"
+
+msgid "Accept Button Hover Background"
+msgstr "Sfondo pulsante Accetta (hover)"
+
+msgid "Accept Button Text Color"
+msgstr "Colore testo pulsante Accetta"
+
+msgid "Accept Button Hover Text Color"
+msgstr "Colore testo pulsante Accetta (hover)"
+
+msgid "Reject Button Background"
+msgstr "Sfondo pulsante Rifiuta"
+
+msgid "Reject Button Hover Background"
+msgstr "Sfondo pulsante Rifiuta (hover)"
+
+msgid "Reject Button Text Color"
+msgstr "Colore testo pulsante Rifiuta"
+
+msgid "Reject Button Hover Text Color"
+msgstr "Colore testo pulsante Rifiuta (hover)"
+
+msgid "This field applies only to the default language. Other translations must be changed using a translation tool (e.g. Loco Translate or Polylang)."
+msgstr "Questo campo si applica solo alla lingua predefinita. Le altre traduzioni devono essere modificate utilizzando uno strumento di traduzione (ad es. Loco Translate o Polylang)."
+
+msgid "Show “Reject” Button"
+msgstr "Mostra il pulsante “Rifiuta”"
+
+msgid "Display the “Reject” button in the banner (visual option only)."
+msgstr "Mostra il pulsante “Rifiuta” nel banner (solo opzione visiva)."
+
+msgid "Top"
+msgstr "In alto"
+
+msgid "Bottom"
+msgstr "In basso"
+
+msgid "Reset cookie settings"
+msgstr "Reimposta impostazioni cookie"

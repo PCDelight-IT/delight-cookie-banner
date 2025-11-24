@@ -1,0 +1,198 @@
+/**
+ * Delight Cookie Banner - Frontend Styles (CSS Variable Version)
+ */
+
+#dcb-cookie-banner {
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.4s ease, visibility 0.4s ease;
+
+	position: fixed;
+	left: 0;
+	width: 100%;
+	z-index: 9999;
+
+	bottom: 0;
+	top: auto;
+
+	pointer-events: none;
+	font-size: 15px;
+	line-height: 1.4;
+	padding: 1em;
+	box-sizing: border-box;
+
+	background-color: var(--dcb-bg-color, #ffffff);
+	color: var(--dcb-text-color, #000000);
+}
+
+#dcb-cookie-banner.dcb-active {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+	animation: dcb-slide-in 0.4s ease;
+}
+
+/* Positions */
+#dcb-cookie-banner.dcb-position-top {
+	top: 0;
+	bottom: auto;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#dcb-cookie-banner.dcb-position-bottom {
+	bottom: 0;
+	top: auto;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#dcb-cookie-banner.dcb-position-middle {
+	top: 50%;
+	bottom: auto;
+	transform: translateY(-50%);
+	max-width: 500px;
+	margin: 0 auto;
+	border-radius: 8px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Layout */
+.dcb-inner {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75em;
+	max-width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.dcb-message {
+	margin: 0;
+}
+
+.dcb-message a {
+	text-decoration: underline;
+	color: inherit;
+}
+
+/* Buttons */
+.dcb-buttons {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 0.5em;
+}
+
+/* Accept button */
+#dcb-accept.dcb-btn {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1.2em;
+	border: 1px solid var(--dcb-accept-bg, #0073aa);
+	border-radius: 4px;
+	padding: 0.5em 1.2em;
+	font-weight: 500;
+	cursor: pointer;
+	transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+	background-color: var(--dcb-accept-bg, #0073aa);
+	color: var(--dcb-accept-text, #ffffff);
+}
+
+#dcb-accept.dcb-btn:hover,
+#dcb-accept.dcb-btn:focus {
+	background-color: var(--dcb-accept-hover-bg, #005177);
+	border-color: var(--dcb-accept-hover-bg, #005177);
+	color: var(--dcb-accept-hover-text, #ffffff);
+	outline: none;
+}
+
+/* Reject button (fixed contrast) */
+#dcb-reject.dcb-btn {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1.2em;
+	border: 1px solid var(--dcb-reject-bg, #333333);
+	border-radius: 4px;
+	padding: 0.5em 1.2em;
+	font-weight: 500;
+	cursor: pointer;
+	transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+	background-color: var(--dcb-reject-bg, #333333);
+	color: var(--dcb-reject-text, #ffffff);
+}
+
+#dcb-reject.dcb-btn:hover,
+#dcb-reject.dcb-btn:focus {
+	background-color: var(--dcb-reject-hover-bg, #000000);
+	border-color: var(--dcb-reject-hover-bg, #000000);
+	color: var(--dcb-reject-hover-text, #ffffff);
+	outline: none;
+}
+
+/* Footer link styling */
+#dcb-footer-link a {
+	color: inherit;
+	opacity: 0.8;
+	text-decoration: underline;
+	transition: opacity 0.3s ease;
+}
+
+#dcb-footer-link a:hover {
+	opacity: 1;
+}
+
+/* Footer link container */
+#dcb-footer-link.dcb-footer-center {
+	text-align: center;
+	margin: 20px 0;
+	font-size: 13px;
+}
+
+/* Shortcode & global triggers */
+.dcb-open,
+[data-dcb-open],
+.dcb-reset,
+[data-dcb-reset] {
+	cursor: pointer;
+	text-decoration: underline;
+	color: inherit;
+	opacity: 0.8;
+	transition: opacity 0.3s ease;
+}
+
+.dcb-open:hover,
+[data-dcb-open]:hover,
+.dcb-reset:hover,
+[data-dcb-reset]:hover {
+	opacity: 1;
+}
+
+/* Optional: differentiate reset visually */
+.dcb-reset,
+[data-dcb-reset] {
+	opacity: 0.7;
+	font-size: 0.95em;
+}
+
+/* Animation */
+@keyframes dcb-slide-in {
+	from { opacity: 0; transform: translateY(10px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+	#dcb-cookie-banner {
+		font-size: 14px;
+		padding: 0.8em;
+	}
+
+	.dcb-buttons {
+		flex-direction: column;
+		align-items: center; 
+	}
+
+	.dcb-buttons .dcb-btn {
+		width: auto;        /
+		max-width: 240px;   
+	}
+}

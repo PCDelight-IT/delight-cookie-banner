@@ -1,0 +1,149 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Delight Cookie Banner 1.0.0\n"
+"Language: fr_FR\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "Delight Cookie Banner"
+msgstr "Bannière de cookies Delight"
+
+msgid "Cookie Banner Settings"
+msgstr "Paramètres de la bannière de cookies"
+
+msgid "Customize the appearance and texts of your cookie banner."
+msgstr "Personnalisez l’apparence et les textes de votre bannière de cookies."
+
+msgid "Background Color"
+msgstr "Couleur d’arrière-plan"
+
+msgid "Text Color"
+msgstr "Couleur du texte"
+
+msgid "Accept Button Background"
+msgstr "Couleur du fond du bouton Accepter"
+
+msgid "Accept Button Text Color"
+msgstr "Couleur du texte du bouton Accepter"
+
+msgid "Reject Button Background"
+msgstr "Couleur du fond du bouton Refuser"
+
+msgid "Reject Button Text Color"
+msgstr "Couleur du texte du bouton Refuser"
+
+msgid "Banner Position"
+msgstr "Position de la bannière"
+
+msgid "Banner Message"
+msgstr "Message de la bannière"
+
+msgid "Accept Button Text"
+msgstr "Texte du bouton Accepter"
+
+msgid "Reject Button Text"
+msgstr "Texte du bouton Refuser"
+
+msgid "Privacy Policy Page"
+msgstr "Page de politique de confidentialité"
+
+msgid "Show Footer Link for Consent Change"
+msgstr "Afficher le lien de modification du consentement dans le pied de page"
+
+msgid "Top"
+msgstr "Haut"
+
+msgid "Middle"
+msgstr "Milieu"
+
+msgid "Bottom"
+msgstr "Bas"
+
+msgid "Select a page"
+msgstr "Sélectionner une page"
+
+msgid "Save Settings"
+msgstr "Enregistrer les paramètres"
+
+msgid "Accept"
+msgstr "Accepter"
+
+msgid "Reject"
+msgstr "Refuser"
+
+msgid "Privacy Policy"
+msgstr "Politique de confidentialité"
+
+msgid "Change cookie settings"
+msgstr "Modifier les paramètres des cookies"
+
+msgid "Cookie consent banner"
+msgstr "Bannière de consentement aux cookies"
+
+msgid "Customize the appearance, text, and behavior of your cookie banner. The live preview updates instantly on the right."
+msgstr "Personnalisez l’apparence, le texte et le comportement de votre bannière de cookies. L’aperçu en direct à droite se met à jour instantanément."
+
+msgid "This preview reflects your current settings. Hover the buttons to see hover colors. Save to persist changes."
+msgstr "Cet aperçu reflète vos paramètres actuels. Survolez les boutons pour voir les couleurs au survol. Enregistrez pour appliquer les modifications."
+
+msgid "Automatically display a “Change cookie settings” link in the footer. You can also insert the same link anywhere on your site using the [dcb_open] shortcode, or add a reset link with [dcb_reset]."
+msgstr "Afficher automatiquement le lien « Modifier les paramètres des cookies » dans le pied de page. Vous pouvez également insérer le même lien n’importe où sur votre site avec le shortcode [dcb_open], ou ajouter un lien de réinitialisation avec [dcb_reset]."
+
+msgid "Alternatively, use [dcb_open] or [dcb_reset]."
+msgstr "Vous pouvez également utiliser [dcb_open] ou [dcb_reset]."
+
+msgid "Settings have been reset to defaults."
+msgstr "Les paramètres ont été réinitialisés aux valeurs par défaut."
+
+msgid "Reset all settings to their installation defaults?"
+msgstr "Réinitialiser tous les paramètres aux valeurs par défaut ?"
+
+msgid "Reset to defaults"
+msgstr "Réinitialiser les valeurs par défaut"
+
+msgid "You do not have permission to perform this action."
+msgstr "Vous n’avez pas l’autorisation d’effectuer cette action."
+
+msgid "Live Preview"
+msgstr "Aperçu en direct"
+
+msgid "Accept Button Background"
+msgstr "Arrière-plan du bouton Accepter"
+
+msgid "Accept Button Hover Background"
+msgstr "Arrière-plan du bouton Accepter (survol)"
+
+msgid "Accept Button Text Color"
+msgstr "Couleur du texte du bouton Accepter"
+
+msgid "Accept Button Hover Text Color"
+msgstr "Couleur du texte du bouton Accepter (survol)"
+
+msgid "Reject Button Background"
+msgstr "Arrière-plan du bouton Refuser"
+
+msgid "Reject Button Hover Background"
+msgstr "Arrière-plan du bouton Refuser (survol)"
+
+msgid "Reject Button Text Color"
+msgstr "Couleur du texte du bouton Refuser"
+
+msgid "Reject Button Hover Text Color"
+msgstr "Couleur du texte du bouton Refuser (survol)"
+
+msgid "This field applies only to the default language. Other translations must be changed using a translation tool (e.g. Loco Translate or Polylang)."
+msgstr "Ce champ s’applique uniquement à la langue par défaut. Les autres traductions doivent être modifiées à l’aide d’un outil de traduction (par ex. Loco Translate ou Polylang)."
+
+msgid "Show “Reject” Button"
+msgstr "Afficher le bouton « Refuser »"
+
+msgid "Display the “Reject” button in the banner (visual option only)."
+msgstr "Affiche le bouton « Refuser » dans la bannière (option visuelle uniquement)."
+
+msgid "Top"
+msgstr "Haut de page"
+
+msgid "Bottom"
+msgstr "Bas de page"
+
+msgid "Reset cookie settings"
+msgstr "Réinitialiser les paramètres des cookies"

@@ -1,0 +1,193 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Delight Cookie Banner 1.0.0\n"
+"Report-Msgid-Bugs-To: https://pcdelight.com\n"
+"POT-Creation-Date: 2025-10-31 12:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: \n"
+"Language-Team: Delight Plugins <support@pcdelight.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Delight Cookie Banner POT Generator\n"
+
+#: delight-cookie-banner.php:40
+msgid "Delight Cookie Banner"
+msgstr ""
+
+#: includes/class-admin.php:45
+msgid "Cookie Banner Settings"
+msgstr ""
+
+#: includes/class-admin.php:47
+msgid "Customize the appearance and texts of your cookie banner."
+msgstr ""
+
+#: includes/class-admin.php:55
+msgid "Background Color"
+msgstr ""
+
+#: includes/class-admin.php:56
+msgid "Text Color"
+msgstr ""
+
+#: includes/class-admin.php:57
+msgid "Accept Button Background"
+msgstr ""
+
+#: includes/class-admin.php:58
+msgid "Accept Button Hover Background"
+msgstr ""
+
+#: includes/class-admin.php:59
+msgid "Accept Button Text Color"
+msgstr ""
+
+#: includes/class-admin.php:60
+msgid "Accept Button Hover Text Color"
+msgstr ""
+
+#: includes/class-admin.php:61
+msgid "Reject Button Background"
+msgstr ""
+
+#: includes/class-admin.php:62
+msgid "Reject Button Hover Background"
+msgstr ""
+
+#: includes/class-admin.php:63
+msgid "Reject Button Text Color"
+msgstr ""
+
+#: includes/class-admin.php:64
+msgid "Reject Button Hover Text Color"
+msgstr ""
+
+#: includes/class-admin.php:65
+msgid "Banner Position"
+msgstr ""
+
+#: includes/class-admin.php:66
+msgid "Banner Message"
+msgstr ""
+
+#: includes/class-admin.php:67
+msgid "Accept Button Text"
+msgstr ""
+
+#: includes/class-admin.php:68
+msgid "Reject Button Text"
+msgstr ""
+
+#: includes/class-admin.php:69
+msgid "Privacy Policy Page"
+msgstr ""
+
+#: includes/class-admin.php:70
+msgid "Show Footer Link for Consent Change"
+msgstr ""
+
+#: includes/class-admin.php:102
+msgid "Top"
+msgstr ""
+
+#: includes/class-admin.php:103
+msgid "Middle"
+msgstr ""
+
+#: includes/class-admin.php:104
+msgid "Bottom"
+msgstr ""
+
+#: includes/class-admin.php:115
+msgid "Select a page"
+msgstr ""
+
+#: includes/class-admin.php:147
+msgid "Save Settings"
+msgstr ""
+
+#: includes/class-admin.php:149
+msgid "You do not have permission to perform this action."
+msgstr ""
+
+#: includes/class-admin.php:247
+msgid "Reset all settings to their installation defaults?"
+msgstr ""
+
+#: includes/class-admin.php:252
+msgid "Reset to defaults"
+msgstr ""
+
+#: includes/class-admin.php:284
+msgid "Automatically display a “Change cookie settings” link in the footer. You can also insert the same link anywhere on your site using the [dcb_open] shortcode, or add a reset link with [dcb_reset]."
+msgstr ""
+
+#: includes/class-admin.php:285
+msgid "Alternatively, use [dcb_open] or [dcb_reset]."
+msgstr ""
+
+#: includes/class-admin.php:306
+msgid "Live Preview"
+msgstr ""
+
+#: includes/class-admin.php:317
+msgid "Settings have been reset to defaults."
+msgstr ""
+
+#: includes/class-admin.php:335
+msgid "This preview reflects your current settings. Hover the buttons to see hover colors. Save to persist changes."
+msgstr ""
+
+#: includes/class-frontend.php:29
+msgid "Cookie consent banner"
+msgstr ""
+
+#: includes/class-frontend.php:44
+msgid "Accept"
+msgstr ""
+
+#: includes/class-frontend.php:45
+msgid "Reject"
+msgstr ""
+
+#: includes/class-frontend.php:49
+msgid "Privacy Policy"
+msgstr ""
+
+#: includes/class-frontend.php:116
+msgid "Change cookie settings"
+msgstr ""
+
+#: includes/class-frontend.php:151
+msgid "Reset cookie settings
+msgstr ""
+
+#: assets/js/banner.js:6
+msgid "Cookie consent banner logic initialized"
+msgstr ""
+
+#: includes/class-admin.php:65
+msgid "We use cookies to improve your experience. By clicking “Accept”, you agree to the use of cookies as described in our Privacy Policy."
+msgstr ""
+
+#: includes/class-admin.php:66
+msgid "This field applies only to the default language. Other translations must be changed using a translation tool (e.g. Loco Translate or Polylang)."
+msgstr ""
+
+#: includes/class-admin.php:107
+msgid "Show “Reject” Button"
+msgstr ""
+
+#: includes/class-admin.php:254
+msgid "Display the “Reject” button in the banner (visual option only)."
+msgstr ""
+
+#: includes/class-admin.php:205
+msgid "Top"
+msgstr ""
+
+#: includes/class-admin.php:206
+msgid "Bottom"
+msgstr ""

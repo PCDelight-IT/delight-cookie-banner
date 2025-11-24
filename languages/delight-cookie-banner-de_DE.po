@@ -1,0 +1,149 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Delight Cookie Banner 1.0.0\n"
+"Language: de_DE\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "Delight Cookie Banner"
+msgstr "Delight Cookie Banner"
+
+msgid "Cookie Banner Settings"
+msgstr "Cookie-Banner-Einstellungen"
+
+msgid "Customize the appearance and texts of your cookie banner."
+msgstr "Passe das Aussehen und die Texte deines Cookie-Banners an."
+
+msgid "Background Color"
+msgstr "Hintergrundfarbe"
+
+msgid "Text Color"
+msgstr "Textfarbe"
+
+msgid "Accept Button Background"
+msgstr "Akzeptieren-Button Hintergrundfarbe"
+
+msgid "Accept Button Text Color"
+msgstr "Akzeptieren-Button Textfarbe"
+
+msgid "Reject Button Background"
+msgstr "Ablehnen-Button Hintergrundfarbe"
+
+msgid "Reject Button Text Color"
+msgstr "Ablehnen-Button Textfarbe"
+
+msgid "Banner Position"
+msgstr "Banner-Position"
+
+msgid "Banner Message"
+msgstr "Banner-Nachricht"
+
+msgid "Accept Button Text"
+msgstr "Text für „Akzeptieren“-Button"
+
+msgid "Reject Button Text"
+msgstr "Text für „Ablehnen“-Button"
+
+msgid "Privacy Policy Page"
+msgstr "Datenschutzerklärungs-Seite"
+
+msgid "Show Footer Link for Consent Change"
+msgstr "Link im Footer anzeigen, um Einwilligung zu ändern"
+
+msgid "Top"
+msgstr "Oben"
+
+msgid "Middle"
+msgstr "Mittig"
+
+msgid "Bottom"
+msgstr "Unten"
+
+msgid "Select a page"
+msgstr "Seite auswählen"
+
+msgid "Save Settings"
+msgstr "Einstellungen speichern"
+
+msgid "Accept"
+msgstr "Akzeptieren"
+
+msgid "Reject"
+msgstr "Ablehnen"
+
+msgid "Privacy Policy"
+msgstr "Datenschutzerklärung"
+
+msgid "Change cookie settings"
+msgstr "Cookie-Einstellungen ändern"
+
+msgid "Cookie consent banner"
+msgstr "Cookie-Einwilligungsbanner"
+
+msgid "Customize the appearance, text, and behavior of your cookie banner. The live preview updates instantly on the right."
+msgstr "Passe das Erscheinungsbild, den Text und das Verhalten deines Cookie-Banners an. Die Live-Vorschau rechts wird sofort aktualisiert."
+
+msgid "This preview reflects your current settings. Hover the buttons to see hover colors. Save to persist changes."
+msgstr "Diese Vorschau zeigt deine aktuellen Einstellungen. Fahre mit der Maus über die Schaltflächen, um die Hover-Farben zu sehen. Speichere, um Änderungen zu übernehmen."
+
+msgid "Automatically display a “Change cookie settings” link in the footer. You can also insert the same link anywhere on your site using the [dcb_open] shortcode, or add a reset link with [dcb_reset]."
+msgstr "„Cookie-Einstellungen ändern“-Link automatisch im Footer anzeigen. Du kannst denselben Link auch überall auf deiner Website mit dem Shortcode [dcb_open] einfügen oder mit [dcb_reset] einen Zurücksetzen-Link hinzufügen."
+
+msgid "Alternatively, use [dcb_open] or [dcb_reset]."
+msgstr "Alternativ kannst du [dcb_open] oder [dcb_reset] verwenden."
+
+msgid "Settings have been reset to defaults."
+msgstr "Die Einstellungen wurden auf die Standardwerte zurückgesetzt."
+
+msgid "Reset all settings to their installation defaults?"
+msgstr "Alle Einstellungen auf die Standardwerte zurücksetzen?"
+
+msgid "Reset to defaults"
+msgstr "Auf Standardwerte zurücksetzen"
+
+msgid "You do not have permission to perform this action."
+msgstr "Du hast keine Berechtigung, diese Aktion auszuführen."
+
+msgid "Live Preview"
+msgstr "Live-Vorschau"
+
+msgid "Accept Button Background"
+msgstr "Akzeptieren-Button Hintergrund"
+
+msgid "Accept Button Hover Background"
+msgstr "Akzeptieren-Button Hintergrund (Hover)"
+
+msgid "Accept Button Text Color"
+msgstr "Akzeptieren-Button Textfarbe"
+
+msgid "Accept Button Hover Text Color"
+msgstr "Akzeptieren-Button Textfarbe (Hover)"
+
+msgid "Reject Button Background"
+msgstr "Ablehnen-Button Hintergrund"
+
+msgid "Reject Button Hover Background"
+msgstr "Ablehnen-Button Hintergrund (Hover)"
+
+msgid "Reject Button Text Color"
+msgstr "Ablehnen-Button Textfarbe"
+
+msgid "Reject Button Hover Text Color"
+msgstr "Ablehnen-Button Textfarbe (Hover)"
+
+msgid "This field applies only to the default language. Other translations must be changed using a translation tool (e.g. Loco Translate or Polylang)."
+msgstr "Dieses Feld gilt nur für die Standardsprache. Andere Übersetzungen müssen mit einem Übersetzungstool (z. B. Loco Translate oder Polylang) geändert werden."
+
+msgid "Show “Reject” Button"
+msgstr "„Ablehnen“-Button anzeigen"
+
+msgid "Display the “Reject” button in the banner (visual option only)."
+msgstr "Zeigt den „Ablehnen“-Button im Banner an (nur als visuelle Option)."
+
+msgid "Top"
+msgstr "Oben"
+
+msgid "Bottom"
+msgstr "Unten"
+
+msgid "Reset cookie settings"
+msgstr "Cookie-Einstellungen zurücksetzen"

@@ -1,0 +1,129 @@
+/* Banner container (Admin preview only) */
+#dcb-preview .dcb-banner {
+	background-color: var(--dcb-bg-color, #ffffff);
+	color: var(--dcb-text-color, #000000);
+	padding: 1em;
+	text-align: center;
+	border-radius: 6px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	margin: 0 auto;
+}
+
+/* Two-column grid for settings (left) and live preview (right) */
+.dcb-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 24px;
+	align-items: start;
+	text-align: center;
+	margin-top: 12px;
+}
+
+@media (max-width: 1024px) {
+	.dcb-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+.dcb-grid-right {
+	position: sticky;
+	top: 20px;
+}
+
+.dcb-preview-title {
+	margin-top: 0;
+}
+
+/* Preview container uses CSS variables fed from inline style */
+#dcb-preview {
+	--dcb-bg: #ffffff;
+	--dcb-text: #000000;
+	--dcb-acc-bg: #000000;
+	--dcb-acc-text: #ffffff;
+	--dcb-acc-hover-bg: #333333;
+	--dcb-acc-hover-text: #ffffff;
+	--dcb-rej-bg: #333333;
+	--dcb-rej-text: #ffffff;
+	--dcb-rej-hover-bg: #000000;
+	--dcb-rej-hover-text: #ffffff;
+
+	border: 1px solid #e5e7eb;
+	border-radius: 8px;
+	padding: 16px;
+	background: var(--dcb-bg);
+	color: var(--dcb-text);
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Mimic frontend banner for realistic preview */
+.dcb-banner {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.dcb-message {
+	margin: 0;
+}
+
+.dcb-message a {
+	text-decoration: underline;
+	color: inherit;
+}
+
+.dcb-buttons {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 0.5em;
+}
+
+/* General button base */
+.dcb-btn {
+	border: 1px solid transparent;
+	border-radius: 4px;
+	padding: 0.5em 1.2em;
+	cursor: pointer;
+	font-weight: 500;
+	transition:
+		background-color 0.3s ease,
+		color 0.3s ease,
+		border-color 0.3s ease;
+}
+
+/* Accept button */
+.dcb-accept {
+	background-color: var(--dcb-accept-bg, #000000);
+	color: var(--dcb-accept-text, #ffffff);
+	border-color: var(--dcb-accept-bg, #000000);
+}
+
+.dcb-accept:hover,
+.dcb-accept:focus {
+	background-color: var(--dcb-accept-hover-bg, #333333);
+	border-color: var(--dcb-accept-hover-bg, #333333);
+	color: var(--dcb-accept-hover-text, #ffffff);
+	outline: none;
+}
+
+/* Reject button (fixed invalid color + contrast) */
+.dcb-reject {
+	background-color: var(--dcb-reject-bg, #333333);
+	color: var(--dcb-reject-text, #ffffff);
+	border-color: var(--dcb-reject-bg, #333333);
+}
+
+.dcb-reject:hover,
+.dcb-reject:focus {
+	background-color: var(--dcb-reject-hover-bg, #000000);
+	border-color: var(--dcb-reject-hover-bg, #000000);
+	color: var(--dcb-reject-hover-text, #ffffff);
+	outline: none;
+}
+
+/* Position variants simulated in preview (visual hint only) */
+.dcb-position-top .dcb-banner,
+.dcb-position-middle .dcb-banner,
+.dcb-position-bottom .dcb-banner {
+	/* In admin preview we just render the block; no fixed positioning */
+}
