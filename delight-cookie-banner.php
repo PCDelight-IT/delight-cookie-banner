@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Delight Cookie Banner
- * Plugin URI: https://pcdelight.ch
+ * Plugin URI: https://pcdelight.ch/wordpress-delight-cookie-banner-free/
  * Description: A minimal and multilingual cookie notice for WordPress. GDPR-friendly, lightweight, and compatible with all themes and WooCommerce. Includes live preview and user-friendly language display.
  * Version: 1.1.0
  * Author: PC Delight
@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 // ----------------------------------------------------
 define( 'DCB_PATH', plugin_dir_path( __FILE__ ) );
 define( 'DCB_URL', plugin_dir_url( __FILE__ ) );
-define( 'DCB_VERSION', '1.0.0' );
+define( 'DCB_VERSION', '1.2.0' );
 
 // ----------------------------------------------------
 // 2. Include required class files
