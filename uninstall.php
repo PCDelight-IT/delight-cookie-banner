@@ -16,17 +16,17 @@ if ( ! current_user_can( 'delete_plugins' ) ) {
 }
 
 // Remove all plugin options.
-delete_option( 'dcb_settings' );
+delete_option( 'pcdelicoba_settings' );
 
 // Optional: also remove any transient or cached data if added later.
-// delete_transient( 'dcb_xyz_cache' );
+// delete_transient( 'pcdelicoba_xyz_cache' );
 
 // Optional: remove site-wide settings in multisite environments.
 if ( is_multisite() ) {
-	$sites = get_sites( [ 'fields' => 'ids' ] );
-	foreach ( $sites as $blog_id ) {
-		switch_to_blog( $blog_id );
-		delete_option( 'dcb_settings' );
+	$pcdelicoba_sites = get_sites( [ 'fields' => 'ids' ] );
+	foreach ( $pcdelicoba_sites as $pcdelicoba_blog_id ) {
+		switch_to_blog( $pcdelicoba_blog_id );
+		delete_option( 'pcdelicoba_settings' );
 		restore_current_blog();
 	}
 }

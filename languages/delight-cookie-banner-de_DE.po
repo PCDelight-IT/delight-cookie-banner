@@ -85,11 +85,11 @@ msgstr "Passe das Erscheinungsbild, den Text und das Verhalten deines Cookie-Ban
 msgid "This preview reflects your current settings. Hover the buttons to see hover colors. Save to persist changes."
 msgstr "Diese Vorschau zeigt deine aktuellen Einstellungen. Fahre mit der Maus über die Schaltflächen, um die Hover-Farben zu sehen. Speichere, um Änderungen zu übernehmen."
 
-msgid "Automatically display a “Change cookie settings” link in the footer. You can also insert the same link anywhere on your site using the [dcb_open] shortcode, or add a reset link with [dcb_reset]."
-msgstr "„Cookie-Einstellungen ändern“-Link automatisch im Footer anzeigen. Du kannst denselben Link auch überall auf deiner Website mit dem Shortcode [dcb_open] einfügen oder mit [dcb_reset] einen Zurücksetzen-Link hinzufügen."
+msgid "Automatically display a “Change cookie settings” link in the footer. You can also insert the same link anywhere on your site using the [pcdelicoba_open] shortcode, or add a reset link with [pcdelicoba_reset]."
+msgstr "„Cookie-Einstellungen ändern“-Link automatisch im Footer anzeigen. Du kannst denselben Link auch überall auf deiner Website mit dem Shortcode [pcdelicoba_open] einfügen oder mit [pcdelicoba_reset] einen Zurücksetzen-Link hinzufügen."
 
-msgid "Alternatively, use [dcb_open] or [dcb_reset]."
-msgstr "Alternativ kannst du [dcb_open] oder [dcb_reset] verwenden."
+msgid "Alternatively, use [pcdelicoba_open] or [pcdelicoba_reset]."
+msgstr "Alternativ kannst du [pcdelicoba_open] oder [pcdelicoba_reset] verwenden."
 
 msgid "Settings have been reset to defaults."
 msgstr "Die Einstellungen wurden auf die Standardwerte zurückgesetzt."

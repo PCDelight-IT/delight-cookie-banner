@@ -8,13 +8,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-class DCB_Admin {
+class PCDELICOBA_Admin {
 
 	public function __construct() {
 		add_action( 'admin_menu', [ $this, 'add_admin_menu' ] );
 		add_action( 'admin_init', [ $this, 'register_settings' ] );
 		add_action( 'admin_enqueue_scripts', [ $this, 'enqueue_admin_assets' ] );
-		add_action( 'admin_post_dcb_reset_settings', [ $this, 'handle_reset_settings' ] );
+		add_action( 'admin_post_pcdelicoba_reset_settings', [ $this, 'handle_reset_settings' ] );
 	}
 
 	public function get_default_settings(): array {
@@ -44,12 +44,12 @@ class DCB_Admin {
 			return;
 		}
 
-		wp_enqueue_style( 'dcb-admin-style', DCB_URL . 'assets/css/admin.css', [], DCB_VERSION );
-		wp_enqueue_script( 'dcb-admin-script', DCB_URL . 'assets/js/admin.js', [], DCB_VERSION, true );
+		wp_enqueue_style( 'pcdelicoba-admin-style', PCDELICOBA_URL . 'assets/css/admin.css', [], PCDELICOBA_VERSION );
+		wp_enqueue_script( 'pcdelicoba-admin-script', PCDELICOBA_URL . 'assets/js/admin.js', [], PCDELICOBA_VERSION, true );
 
 		wp_localize_script(
-			'dcb-admin-script',
-			'dcbAdminI18n',
+			'pcdelicoba-admin-script',
+			'pcdelicobaAdminI18n',
 			[
 				'privacyPolicy'  => esc_html__( 'Privacy Policy', 'delight-cookie-banner' ),
 				'changeSettings' => esc_html__( 'Change cookie settings', 'delight-cookie-banner' ),
@@ -69,8 +69,8 @@ class DCB_Admin {
 
 	public function register_settings() {
 		register_setting(
-			'dcb_settings_group',
-			'dcb_settings',
+			'pcdelicoba_settings_group',
+			'pcdelicoba_settings',
 			[
 				'type'              => 'array',
 				'sanitize_callback' => [ $this, 'sanitize_settings' ],
@@ -79,7 +79,7 @@ class DCB_Admin {
 		);
 
 		add_settings_section(
-			'dcb_main_section',
+			'pcdelicoba_main_section',
 			esc_html__( 'Cookie Banner Settings', 'delight-cookie-banner' ),
 			function() {
 				echo '<p>' . esc_html__( 'Customize the appearance, text, and behavior of your cookie banner. The live preview updates instantly on the right.', 'delight-cookie-banner' ) . '</p>';
@@ -113,7 +113,7 @@ class DCB_Admin {
 				esc_html( $label ),
 				[ $this, 'render_field' ],
 				'delight-cookie-banner',
-				'dcb_main_section',
+				'pcdelicoba_main_section',
 				[ 'id' => $field ]
 			);
 		}
@@ -176,7 +176,7 @@ class DCB_Admin {
 		return $output;
 	}
 	public function render_field( $args ) {
-		$stored  = get_option( 'dcb_settings' );
+		$stored  = get_option( 'pcdelicoba_settings' );
 		$options = is_array( $stored ) ? array_merge( $this->get_default_settings(), $stored ) : $this->get_default_settings();
 
 		$id    = $args['id'];
@@ -194,7 +194,7 @@ class DCB_Admin {
 			case 'btn_reject_hover_bg':
 			case 'btn_reject_hover_text':
 				printf(
-					'<input type="color" class="dcb-bind" data-bind="%1$s" name="dcb_settings[%1$s]" value="%2$s">',
+					'<input type="color" class="pcdelicoba-bind" data-bind="%1$s" name="pcdelicoba_settings[%1$s]" value="%2$s">',
 					esc_attr( $id ),
 					esc_attr( $value )
 				);
@@ -205,7 +205,7 @@ class DCB_Admin {
 					'top'    => __( 'Top', 'delight-cookie-banner' ),
 					'bottom' => __( 'Bottom', 'delight-cookie-banner' ),
 				];
-				echo '<select class="dcb-bind" data-bind="position" name="dcb_settings[' . esc_attr( $id ) . ']">';
+				echo '<select class="pcdelicoba-bind" data-bind="position" name="pcdelicoba_settings[' . esc_attr( $id ) . ']">';
 				foreach ( $positions as $val => $label ) {
 					printf(
 						'<option value="%s" %s>%s</option>',
@@ -219,7 +219,7 @@ class DCB_Admin {
 
 			case 'text_message':
 				$saved_or_default = isset( $options['text_message'] ) ? trim( $options['text_message'] ) : '';
-				echo '<textarea class="large-text dcb-bind" data-bind="text_message" name="dcb_settings[text_message]" rows="3">'
+				echo '<textarea class="large-text pcdelicoba-bind" data-bind="text_message" name="pcdelicoba_settings[text_message]" rows="3">'
 					. esc_textarea( $saved_or_default ) .
 					'</textarea>';
 				echo '<p class="description">';
@@ -230,7 +230,7 @@ class DCB_Admin {
 			case 'text_accept':
 			case 'text_reject':
 				printf(
-					'<input type="text" class="regular-text dcb-bind" data-bind="%1$s" name="dcb_settings[%1$s]" value="%2$s">',
+					'<input type="text" class="regular-text pcdelicoba-bind" data-bind="%1$s" name="pcdelicoba_settings[%1$s]" value="%2$s">',
 					esc_attr( $id ),
 					esc_attr( $value )
 				);
@@ -239,24 +239,24 @@ class DCB_Admin {
 			case 'privacy_page':
 				$preselect = $value ?: get_option( 'wp_page_for_privacy_policy' );
 				wp_dropdown_pages( [
-					'name'              => 'dcb_settings[' . esc_attr( $id ) . ']',
+					'name'              => 'pcdelicoba_settings[' . esc_attr( $id ) . ']',
 					'show_option_none'  => esc_html__( 'Select a page', 'delight-cookie-banner' ),
 					'option_none_value' => '',
 					'selected'          => absint( $preselect ),
-					'class'             => 'dcb-bind',
+					'class'             => 'pcdelicoba-bind',
 				] );
 				break;
 
 			case 'show_footer_link':
 			case 'show_reject_button':
 				$desc = ( 'show_footer_link' === $id )
-					? esc_html__( 'Automatically display a “Change cookie settings” link in the footer. You can also insert the same link anywhere on your site using the [dcb_open] shortcode, or add a reset link with [dcb_reset].', 'delight-cookie-banner' )
+					? esc_html__( 'Automatically display a “Change cookie settings” link in the footer. You can also insert the same link anywhere on your site using the [pcdelicoba_open] shortcode, or add a reset link with [pcdelicoba_reset].', 'delight-cookie-banner' )
 					: esc_html__( 'Display the “Reject” button in the banner (visual option only).', 'delight-cookie-banner' );
 
 				// Hidden input ensures “0” is submitted when unchecked.
 				printf(
-					'<input type="hidden" name="dcb_settings[%1$s]" value="0">
-					<label><input type="checkbox" class="dcb-bind" data-bind="%1$s" name="dcb_settings[%1$s]" value="1" %2$s> %3$s</label>',
+					'<input type="hidden" name="pcdelicoba_settings[%1$s]" value="0">
+					<label><input type="checkbox" class="pcdelicoba-bind" data-bind="%1$s" name="pcdelicoba_settings[%1$s]" value="1" %2$s> %3$s</label>',
 					esc_attr( $id ),
 					checked( ! empty( $value ), true, false ),
 					esc_html( $desc )
@@ -265,7 +265,7 @@ class DCB_Admin {
 
 			default:
 				printf(
-					'<input type="text" class="regular-text dcb-bind" data-bind="%1$s" name="dcb_settings[%1$s]" value="%2$s">',
+					'<input type="text" class="regular-text pcdelicoba-bind" data-bind="%1$s" name="pcdelicoba_settings[%1$s]" value="%2$s">',
 					esc_attr( $id ),
 					esc_attr( $value )
 				);
@@ -277,13 +277,13 @@ class DCB_Admin {
 		if ( ! current_user_can( 'manage_options' ) ) {
 			wp_die( esc_html__( 'You do not have permission to perform this action.', 'delight-cookie-banner' ) );
 		}
-		check_admin_referer( 'dcb_reset_settings' );
+		check_admin_referer( 'pcdelicoba_reset_settings' );
 
-		update_option( 'dcb_settings', $this->get_default_settings() );
+		update_option( 'pcdelicoba_settings', $this->get_default_settings() );
 
 		wp_safe_redirect(
 			add_query_arg(
-				[ 'page' => 'delight-cookie-banner', 'dcb_reset' => '1' ],
+				[ 'page' => 'delight-cookie-banner', 'pcdelicoba_reset' => '1' ],
 				admin_url( 'options-general.php' )
 			)
 		);
@@ -291,7 +291,7 @@ class DCB_Admin {
 	}
 
 	public function render_settings_page() {
-		$stored  = get_option( 'dcb_settings' );
+		$stored  = get_option( 'pcdelicoba_settings' );
 		$options = is_array( $stored ) ? array_merge( $this->get_default_settings(), $stored ) : $this->get_default_settings();
 
 		$bg_color              = $options['bg_color'];
@@ -312,40 +312,42 @@ class DCB_Admin {
 		$privacy_id            = $options['privacy_page'] ?: get_option( 'wp_page_for_privacy_policy' );
 		$privacy_url           = $privacy_id ? get_permalink( $privacy_id ) : '#';
 
-		if ( isset( $_GET['dcb_reset'] ) && isset( $_GET['_wpnonce'] ) && wp_verify_nonce( sanitize_key( $_GET['_wpnonce'] ), 'dcb_reset_action' ) ) {
-			$dcb_reset = sanitize_text_field( wp_unslash( $_GET['dcb_reset'] ) );
-		} else {
-			$dcb_reset = '';
-		}
+		// We only read a GET flag for displaying a notice, no action is performed.
+		// phpcs:disable WordPress.Security.NonceVerification.Recommended
+		$pcdelicoba_reset = isset( $_GET['pcdelicoba_reset'] )
+			? sanitize_text_field( wp_unslash( $_GET['pcdelicoba_reset'] ) )
+			: '';
 
-		if ( $dcb_reset === '1' ) {
+		if ( $pcdelicoba_reset === '1' ) {
 			echo '<div class="notice notice-success is-dismissible"><p>' .
-				 esc_html__( 'Settings have been reset to defaults.', 'delight-cookie-banner' ) .
+				  esc_html__( 'Settings have been reset to defaults.', 'delight-cookie-banner' ) .
 				 '</p></div>';
 		}
+		// phpcs:enable WordPress.Security.NonceVerification.Recommended
+		
 		?>
 		<div class="wrap">
 			<h1><?php echo esc_html__( 'Delight Cookie Banner', 'delight-cookie-banner' ); ?></h1>
 
-			<div class="dcb-grid">
-				<div class="dcb-grid-left">
+			<div class="pcdelicoba-grid">
+				<div class="pcdelicoba-grid-left">
 					<form action="options.php" method="post" style="margin-bottom:16px;">
 						<?php
-						settings_fields( 'dcb_settings_group' );
+						settings_fields( 'pcdelicoba_settings_group' );
 						do_settings_sections( 'delight-cookie-banner' );
 						submit_button( esc_html__( 'Save Settings', 'delight-cookie-banner' ) );
 						?>
 					</form>
 
 					<form action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>" method="post" onsubmit="return confirm('<?php echo esc_attr__( 'Reset all settings to their installation defaults?', 'delight-cookie-banner' ); ?>');">
-						<input type="hidden" name="action" value="dcb_reset_settings">
-						<?php wp_nonce_field( 'dcb_reset_settings' ); ?>
+						<input type="hidden" name="action" value="pcdelicoba_reset_settings">
+						<?php wp_nonce_field( 'pcdelicoba_reset_settings' ); ?>
 						<?php submit_button( esc_html__( 'Reset to defaults', 'delight-cookie-banner' ), 'secondary' ); ?>
 					</form>
 				</div>
 
-				<div class="dcb-grid-right">
-					<h2 class="dcb-preview-title"><?php echo esc_html__( 'Live Preview', 'delight-cookie-banner' ); ?></h2>
+				<div class="pcdelicoba-grid-right">
+					<h2 class="pcdelicoba-preview-title"><?php echo esc_html__( 'Live Preview', 'delight-cookie-banner' ); ?></h2>
 
 					<?php
 					$privacy_title = $privacy_id
@@ -353,34 +355,34 @@ class DCB_Admin {
 						: esc_html__( 'Privacy Policy', 'delight-cookie-banner' );
 					?>
 
-					<div id="dcb-preview"
-						class="dcb-preview dcb-position-<?php echo esc_attr( $position ); ?>"
+					<div id="pcdelicoba-preview"
+						class="pcdelicoba-preview pcdelicoba-position-<?php echo esc_attr( $position ); ?>"
 						style="
-							--dcb-bg-color: <?php echo esc_attr( $bg_color ); ?>;
-							--dcb-text-color: <?php echo esc_attr( $text_color ); ?>;
-							--dcb-accept-bg: <?php echo esc_attr( $btn_accept_bg ); ?>;
-							--dcb-accept-text: <?php echo esc_attr( $btn_accept_text ); ?>;
-							--dcb-accept-hover-bg: <?php echo esc_attr( $btn_accept_hover_bg ); ?>;
-							--dcb-accept-hover-text: <?php echo esc_attr( $btn_accept_hover_text ); ?>;
-							--dcb-reject-bg: <?php echo esc_attr( $btn_reject_bg ); ?>;
-							--dcb-reject-text: <?php echo esc_attr( $btn_reject_text ); ?>;
-							--dcb-reject-hover-bg: <?php echo esc_attr( $btn_reject_hover_bg ); ?>;
-							--dcb-reject-hover-text: <?php echo esc_attr( $btn_reject_hover_text ); ?>;
+							--pcdelicoba-bg-color: <?php echo esc_attr( $bg_color ); ?>;
+							--pcdelicoba-text-color: <?php echo esc_attr( $text_color ); ?>;
+							--pcdelicoba-accept-bg: <?php echo esc_attr( $btn_accept_bg ); ?>;
+							--pcdelicoba-accept-text: <?php echo esc_attr( $btn_accept_text ); ?>;
+							--pcdelicoba-accept-hover-bg: <?php echo esc_attr( $btn_accept_hover_bg ); ?>;
+							--pcdelicoba-accept-hover-text: <?php echo esc_attr( $btn_accept_hover_text ); ?>;
+							--pcdelicoba-reject-bg: <?php echo esc_attr( $btn_reject_bg ); ?>;
+							--pcdelicoba-reject-text: <?php echo esc_attr( $btn_reject_text ); ?>;
+							--pcdelicoba-reject-hover-bg: <?php echo esc_attr( $btn_reject_hover_bg ); ?>;
+							--pcdelicoba-reject-hover-text: <?php echo esc_attr( $btn_reject_hover_text ); ?>;
 						"
 					>
-						<div class="dcb-banner">
-							<p class="dcb-message">
-								<span class="js-dcb-message"><?php echo esc_html( $text_message ); ?></span>
-								<a class="js-dcb-privacy" href="<?php echo esc_url( $privacy_url ); ?>" target="_blank" rel="noopener noreferrer">
+						<div class="pcdelicoba-banner">
+							<p class="pcdelicoba-message">
+								<span class="js-pcdelicoba-message"><?php echo esc_html( $text_message ); ?></span>
+								<a class="js-pcdelicoba-privacy" href="<?php echo esc_url( $privacy_url ); ?>" target="_blank" rel="noopener noreferrer">
 									<?php echo esc_html( $privacy_title ); ?>
 								</a>
 							</p>
-							<div class="dcb-buttons">
-								<button type="button" class="dcb-btn dcb-accept js-dcb-accept">
+							<div class="pcdelicoba-buttons">
+								<button type="button" class="pcdelicoba-btn pcdelicoba-accept js-pcdelicoba-accept">
 									<?php echo esc_html( $text_accept ); ?>
 								</button>
 								<?php if ( $show_reject_button ) : ?>
-									<button type="button" class="dcb-btn dcb-reject js-dcb-reject">
+									<button type="button" class="pcdelicoba-btn pcdelicoba-reject js-pcdelicoba-reject">
 										<?php echo esc_html( $text_reject ); ?>
 									</button>
 								<?php endif; ?>

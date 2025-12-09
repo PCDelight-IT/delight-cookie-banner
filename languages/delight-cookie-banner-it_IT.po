@@ -85,11 +85,11 @@ msgstr "Personalizza l’aspetto, il testo e il comportamento del tuo banner dei
 msgid "This preview reflects your current settings. Hover the buttons to see hover colors. Save to persist changes."
 msgstr "Questa anteprima riflette le impostazioni attuali. Passa il mouse sui pulsanti per vedere i colori al passaggio. Salva per applicare le modifiche."
 
-msgid "Automatically display a “Change cookie settings” link in the footer. You can also insert the same link anywhere on your site using the [dcb_open] shortcode, or add a reset link with [dcb_reset]."
-msgstr "Mostra automaticamente il link “Modifica impostazioni cookie” nel piè di pagina. Puoi anche inserire lo stesso link in qualsiasi punto del sito con lo shortcode [dcb_open] oppure aggiungere un link di ripristino con [dcb_reset]."
+msgid "Automatically display a “Change cookie settings” link in the footer. You can also insert the same link anywhere on your site using the [pcdelicoba_open] shortcode, or add a reset link with [pcdelicoba_reset]."
+msgstr "Mostra automaticamente il link “Modifica impostazioni cookie” nel piè di pagina. Puoi anche inserire lo stesso link in qualsiasi punto del sito con lo shortcode [pcdelicoba_open] oppure aggiungere un link di ripristino con [pcdelicoba_reset]."
 
-msgid "Alternatively, use [dcb_open] or [dcb_reset]."
-msgstr "In alternativa, utilizza [dcb_open] o [dcb_reset]."
+msgid "Alternatively, use [pcdelicoba_open] or [pcdelicoba_reset]."
+msgstr "In alternativa, utilizza [pcdelicoba_open] o [pcdelicoba_reset]."
 
 msgid "Settings have been reset to defaults."
 msgstr "Le impostazioni sono state ripristinate ai valori predefiniti."

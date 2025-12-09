@@ -2,19 +2,19 @@
 (function () {
 	'use strict';
 
-	window.DCB_AdminPreview = {
+	window.PCDELICOBA_AdminPreview = {
 		init: function () {
 			const qs = (sel, ctx) => (ctx || document).querySelector(sel);
 			const qsa = (sel, ctx) =>
 				Array.prototype.slice.call((ctx || document).querySelectorAll(sel));
 
-			const preview = qs('#dcb-preview');
+			const preview = qs('#pcdelicoba-preview');
 			if (!preview) return;
 
-			const msgEl = qs('.js-dcb-message', preview);
-			const accBtn = qs('.js-dcb-accept', preview);
-			const rejBtn = qs('.js-dcb-reject', preview);
-			const privEl = qs('.js-dcb-privacy', preview);
+			const msgEl = qs('.js-pcdelicoba-message', preview);
+			const accBtn = qs('.js-pcdelicoba-accept', preview);
+			const rejBtn = qs('.js-pcdelicoba-reject', preview);
+			const privEl = qs('.js-pcdelicoba-privacy', preview);
 
 			function setCssVar(name, value) {
 				if (!value) return;
@@ -23,13 +23,13 @@
 
 			function updatePosition(pos) {
 				preview.classList.remove(
-					'dcb-position-top',
-					'dcb-position-middle',
-					'dcb-position-bottom'
+					'pcdelicoba-position-top',
+					'pcdelicoba-position-middle',
+					'pcdelicoba-position-bottom'
 				);
 				const valid = ['top', 'middle', 'bottom'];
 				const newPos = valid.includes(pos) ? pos : 'bottom';
-				preview.classList.add(`dcb-position-${newPos}`);
+				preview.classList.add(`pcdelicoba-position-${newPos}`);
 			}
 
 			function onChange(e) {
@@ -42,34 +42,34 @@
 
 				switch (key) {
 					case 'bg_color':
-						setCssVar('--dcb-bg-color', val);
+						setCssVar('--pcdelicoba-bg-color', val);
 						break;
 					case 'text_color':
-						setCssVar('--dcb-text-color', val);
+						setCssVar('--pcdelicoba-text-color', val);
 						break;
 					case 'btn_accept_bg':
-						setCssVar('--dcb-accept-bg', val);
+						setCssVar('--pcdelicoba-accept-bg', val);
 						break;
 					case 'btn_accept_text':
-						setCssVar('--dcb-accept-text', val);
+						setCssVar('--pcdelicoba-accept-text', val);
 						break;
 					case 'btn_accept_hover_bg':
-						setCssVar('--dcb-accept-hover-bg', val);
+						setCssVar('--pcdelicoba-accept-hover-bg', val);
 						break;
 					case 'btn_accept_hover_text':
-						setCssVar('--dcb-accept-hover-text', val);
+						setCssVar('--pcdelicoba-accept-hover-text', val);
 						break;
 					case 'btn_reject_bg':
-						setCssVar('--dcb-reject-bg', val);
+						setCssVar('--pcdelicoba-reject-bg', val);
 						break;
 					case 'btn_reject_text':
-						setCssVar('--dcb-reject-text', val);
+						setCssVar('--pcdelicoba-reject-text', val);
 						break;
 					case 'btn_reject_hover_bg':
-						setCssVar('--dcb-reject-hover-bg', val);
+						setCssVar('--pcdelicoba-reject-hover-bg', val);
 						break;
 					case 'btn_reject_hover_text':
-						setCssVar('--dcb-reject-hover-text', val);
+						setCssVar('--pcdelicoba-reject-hover-text', val);
 						break;
 					case 'position':
 						updatePosition(val);
@@ -89,7 +89,7 @@
 			}
 
 			// Attach listeners
-			qsa('.dcb-bind').forEach((input) => {
+			qsa('.pcdelicoba-bind').forEach((input) => {
 				input.addEventListener('input', onChange);
 				input.addEventListener('change', onChange);
 			});
@@ -97,6 +97,6 @@
 	};
 
 	document.addEventListener('DOMContentLoaded', function () {
-		window.DCB_AdminPreview.init();
+		window.PCDELICOBA_AdminPreview.init();
 	});
 })();

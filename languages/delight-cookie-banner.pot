@@ -121,11 +121,11 @@ msgid "Reset to defaults"
 msgstr ""
 
 #: includes/class-admin.php:284
-msgid "Automatically display a “Change cookie settings” link in the footer. You can also insert the same link anywhere on your site using the [dcb_open] shortcode, or add a reset link with [dcb_reset]."
+msgid "Automatically display a “Change cookie settings” link in the footer. You can also insert the same link anywhere on your site using the [pcdelicoba_open] shortcode, or add a reset link with [pcdelicoba_reset]."
 msgstr ""
 
 #: includes/class-admin.php:285
-msgid "Alternatively, use [dcb_open] or [dcb_reset]."
+msgid "Alternatively, use [pcdelicoba_open] or [pcdelicoba_reset]."
 msgstr ""
 
 #: includes/class-admin.php:306

@@ -1,7 +1,7 @@
 /* Banner container (Admin preview only) */
-#dcb-preview .dcb-banner {
-	background-color: var(--dcb-bg-color, #ffffff);
-	color: var(--dcb-text-color, #000000);
+#pcdelicoba-preview .pcdelicoba-banner {
+	background-color: var(--pcdelicoba-bg-color, #ffffff);
+	color: var(--pcdelicoba-text-color, #000000);
 	padding: 1em;
 	text-align: center;
 	border-radius: 6px;
@@ -10,7 +10,7 @@
 }
 
 /* Two-column grid for settings (left) and live preview (right) */
-.dcb-grid {
+.pcdelicoba-grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 24px;
@@ -20,58 +20,58 @@
 }
 
 @media (max-width: 1024px) {
-	.dcb-grid {
+	.pcdelicoba-grid {
 		grid-template-columns: 1fr;
 	}
 }
 
-.dcb-grid-right {
+.pcdelicoba-grid-right {
 	position: sticky;
 	top: 20px;
 }
 
-.dcb-preview-title {
+.pcdelicoba-preview-title {
 	margin-top: 0;
 }
 
 /* Preview container uses CSS variables fed from inline style */
-#dcb-preview {
-	--dcb-bg: #ffffff;
-	--dcb-text: #000000;
-	--dcb-acc-bg: #000000;
-	--dcb-acc-text: #ffffff;
-	--dcb-acc-hover-bg: #333333;
-	--dcb-acc-hover-text: #ffffff;
-	--dcb-rej-bg: #333333;
-	--dcb-rej-text: #ffffff;
-	--dcb-rej-hover-bg: #000000;
-	--dcb-rej-hover-text: #ffffff;
+#pcdelicoba-preview {
+	--pcdelicoba-bg: #ffffff;
+	--pcdelicoba-text: #000000;
+	--pcdelicoba-acc-bg: #000000;
+	--pcdelicoba-acc-text: #ffffff;
+	--pcdelicoba-acc-hover-bg: #333333;
+	--pcdelicoba-acc-hover-text: #ffffff;
+	--pcdelicoba-rej-bg: #333333;
+	--pcdelicoba-rej-text: #ffffff;
+	--pcdelicoba-rej-hover-bg: #000000;
+	--pcdelicoba-rej-hover-text: #ffffff;
 
 	border: 1px solid #e5e7eb;
 	border-radius: 8px;
 	padding: 16px;
-	background: var(--dcb-bg);
-	color: var(--dcb-text);
+	background: var(--pcdelicoba-bg);
+	color: var(--pcdelicoba-text);
 	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 /* Mimic frontend banner for realistic preview */
-.dcb-banner {
+.pcdelicoba-banner {
 	display: flex;
 	flex-direction: column;
 	gap: 12px;
 }
 
-.dcb-message {
+.pcdelicoba-message {
 	margin: 0;
 }
 
-.dcb-message a {
+.pcdelicoba-message a {
 	text-decoration: underline;
 	color: inherit;
 }
 
-.dcb-buttons {
+.pcdelicoba-buttons {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -79,7 +79,7 @@
 }
 
 /* General button base */
-.dcb-btn {
+.pcdelicoba-btn {
 	border: 1px solid transparent;
 	border-radius: 4px;
 	padding: 0.5em 1.2em;
@@ -92,38 +92,38 @@
 }
 
 /* Accept button */
-.dcb-accept {
-	background-color: var(--dcb-accept-bg, #000000);
-	color: var(--dcb-accept-text, #ffffff);
-	border-color: var(--dcb-accept-bg, #000000);
+.pcdelicoba-accept {
+	background-color: var(--pcdelicoba-accept-bg, #000000);
+	color: var(--pcdelicoba-accept-text, #ffffff);
+	border-color: var(--pcdelicoba-accept-bg, #000000);
 }
 
-.dcb-accept:hover,
-.dcb-accept:focus {
-	background-color: var(--dcb-accept-hover-bg, #333333);
-	border-color: var(--dcb-accept-hover-bg, #333333);
-	color: var(--dcb-accept-hover-text, #ffffff);
+.pcdelicoba-accept:hover,
+.pcdelicoba-accept:focus {
+	background-color: var(--pcdelicoba-accept-hover-bg, #333333);
+	border-color: var(--pcdelicoba-accept-hover-bg, #333333);
+	color: var(--pcdelicoba-accept-hover-text, #ffffff);
 	outline: none;
 }
 
 /* Reject button (fixed invalid color + contrast) */
-.dcb-reject {
-	background-color: var(--dcb-reject-bg, #333333);
-	color: var(--dcb-reject-text, #ffffff);
-	border-color: var(--dcb-reject-bg, #333333);
+.pcdelicoba-reject {
+	background-color: var(--pcdelicoba-reject-bg, #333333);
+	color: var(--pcdelicoba-reject-text, #ffffff);
+	border-color: var(--pcdelicoba-reject-bg, #333333);
 }
 
-.dcb-reject:hover,
-.dcb-reject:focus {
-	background-color: var(--dcb-reject-hover-bg, #000000);
-	border-color: var(--dcb-reject-hover-bg, #000000);
-	color: var(--dcb-reject-hover-text, #ffffff);
+.pcdelicoba-reject:hover,
+.pcdelicoba-reject:focus {
+	background-color: var(--pcdelicoba-reject-hover-bg, #000000);
+	border-color: var(--pcdelicoba-reject-hover-bg, #000000);
+	color: var(--pcdelicoba-reject-hover-text, #ffffff);
 	outline: none;
 }
 
 /* Position variants simulated in preview (visual hint only) */
-.dcb-position-top .dcb-banner,
-.dcb-position-middle .dcb-banner,
-.dcb-position-bottom .dcb-banner {
+.pcdelicoba-position-top .pcdelicoba-banner,
+.pcdelicoba-position-middle .pcdelicoba-banner,
+.pcdelicoba-position-bottom .pcdelicoba-banner {
 	/* In admin preview we just render the block; no fixed positioning */
 }

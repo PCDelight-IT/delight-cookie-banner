@@ -7,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-class DCB_Assets {
+class PCDELICOBA_Assets {
 
 	public function __construct() {
 		add_action( 'wp_enqueue_scripts', [ $this, 'enqueue_frontend_assets' ] );
@@ -21,24 +21,24 @@ class DCB_Assets {
 
 		// --- Styles ----------------------------------------------------------
 		wp_enqueue_style(
-			'dcb-style',
-			DCB_URL . 'assets/css/style.css',
+			'pcdelicoba-style',
+			PCDELICOBA_URL . 'assets/css/style.css',
 			[],
-			DCB_VERSION
+			PCDELICOBA_VERSION
 		);
 
 		// --- Scripts ---------------------------------------------------------
 		// Load in the header, since banner is rendered at wp_body_open.
 		wp_enqueue_script(
-			'dcb-banner',
-			DCB_URL . 'assets/js/banner.js',
+			'pcdelicoba-banner',
+			PCDELICOBA_URL . 'assets/js/banner.js',
 			[],
-			DCB_VERSION,
+			PCDELICOBA_VERSION,
 			false // false = load in header; banner appears at wp_body_open
 		);
 
 		// --- Options ---------------------------------------------------------
-		$options = get_option( 'dcb_settings', [] );
+		$options = get_option( 'pcdelicoba_settings', [] );
 
 		$localized = [
 			'text_accept'      => isset( $options['text_accept'] )
@@ -67,6 +67,6 @@ class DCB_Assets {
 			'show_footer_link' => ! empty( $options['show_footer_link'] ),
 		];
 
-		wp_localize_script( 'dcb-banner', 'DCB_Settings', $localized );
+		wp_localize_script( 'pcdelicoba-banner', 'PCDELICOBA_Settings', $localized );
 	}
 }

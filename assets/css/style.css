@@ -2,7 +2,7 @@
  * Delight Cookie Banner - Frontend Styles (CSS Variable Version)
  */
 
-#dcb-cookie-banner {
+#pcdelicoba-cookie-banner {
 	visibility: hidden;
 	opacity: 0;
 	transition: opacity 0.4s ease, visibility 0.4s ease;
@@ -21,31 +21,31 @@
 	padding: 1em;
 	box-sizing: border-box;
 
-	background-color: var(--dcb-bg-color, #ffffff);
-	color: var(--dcb-text-color, #000000);
+	background-color: var(--pcdelicoba-bg-color, #ffffff);
+	color: var(--pcdelicoba-text-color, #000000);
 }
 
-#dcb-cookie-banner.dcb-active {
+#pcdelicoba-cookie-banner.pcdelicoba-active {
 	opacity: 1;
 	visibility: visible;
 	pointer-events: auto;
-	animation: dcb-slide-in 0.4s ease;
+	animation: pcdelicoba-slide-in 0.4s ease;
 }
 
 /* Positions */
-#dcb-cookie-banner.dcb-position-top {
+#pcdelicoba-cookie-banner.pcdelicoba-position-top {
 	top: 0;
 	bottom: auto;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-#dcb-cookie-banner.dcb-position-bottom {
+#pcdelicoba-cookie-banner.pcdelicoba-position-bottom {
 	bottom: 0;
 	top: auto;
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-#dcb-cookie-banner.dcb-position-middle {
+#pcdelicoba-cookie-banner.pcdelicoba-position-middle {
 	top: 50%;
 	bottom: auto;
 	transform: translateY(-50%);
@@ -56,7 +56,7 @@
 }
 
 /* Layout */
-.dcb-inner {
+.pcdelicoba-inner {
 	display: flex;
 	flex-direction: column;
 	gap: 0.75em;
@@ -65,17 +65,17 @@
 	text-align: center;
 }
 
-.dcb-message {
+.pcdelicoba-message {
 	margin: 0;
 }
 
-.dcb-message a {
+.pcdelicoba-message a {
 	text-decoration: underline;
 	color: inherit;
 }
 
 /* Buttons */
-.dcb-buttons {
+.pcdelicoba-buttons {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -83,75 +83,75 @@
 }
 
 /* Accept button */
-#dcb-accept.dcb-btn {
+#pcdelicoba-accept.pcdelicoba-btn {
 	display: inline-block;
 	vertical-align: middle;
 	line-height: 1.2em;
-	border: 1px solid var(--dcb-accept-bg, #0073aa);
+	border: 1px solid var(--pcdelicoba-accept-bg, #0073aa);
 	border-radius: 4px;
 	padding: 0.5em 1.2em;
 	font-weight: 500;
 	cursor: pointer;
 	transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-	background-color: var(--dcb-accept-bg, #0073aa);
-	color: var(--dcb-accept-text, #ffffff);
+	background-color: var(--pcdelicoba-accept-bg, #0073aa);
+	color: var(--pcdelicoba-accept-text, #ffffff);
 }
 
-#dcb-accept.dcb-btn:hover,
-#dcb-accept.dcb-btn:focus {
-	background-color: var(--dcb-accept-hover-bg, #005177);
-	border-color: var(--dcb-accept-hover-bg, #005177);
-	color: var(--dcb-accept-hover-text, #ffffff);
+#pcdelicoba-accept.pcdelicoba-btn:hover,
+#pcdelicoba-accept.pcdelicoba-btn:focus {
+	background-color: var(--pcdelicoba-accept-hover-bg, #005177);
+	border-color: var(--pcdelicoba-accept-hover-bg, #005177);
+	color: var(--pcdelicoba-accept-hover-text, #ffffff);
 	outline: none;
 }
 
 /* Reject button (fixed contrast) */
-#dcb-reject.dcb-btn {
+#pcdelicoba-reject.pcdelicoba-btn {
 	display: inline-block;
 	vertical-align: middle;
 	line-height: 1.2em;
-	border: 1px solid var(--dcb-reject-bg, #333333);
+	border: 1px solid var(--pcdelicoba-reject-bg, #333333);
 	border-radius: 4px;
 	padding: 0.5em 1.2em;
 	font-weight: 500;
 	cursor: pointer;
 	transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-	background-color: var(--dcb-reject-bg, #333333);
-	color: var(--dcb-reject-text, #ffffff);
+	background-color: var(--pcdelicoba-reject-bg, #333333);
+	color: var(--pcdelicoba-reject-text, #ffffff);
 }
 
-#dcb-reject.dcb-btn:hover,
-#dcb-reject.dcb-btn:focus {
-	background-color: var(--dcb-reject-hover-bg, #000000);
-	border-color: var(--dcb-reject-hover-bg, #000000);
-	color: var(--dcb-reject-hover-text, #ffffff);
+#pcdelicoba-reject.pcdelicoba-btn:hover,
+#pcdelicoba-reject.pcdelicoba-btn:focus {
+	background-color: var(--pcdelicoba-reject-hover-bg, #000000);
+	border-color: var(--pcdelicoba-reject-hover-bg, #000000);
+	color: var(--pcdelicoba-reject-hover-text, #ffffff);
 	outline: none;
 }
 
 /* Footer link styling */
-#dcb-footer-link a {
+#pcdelicoba-footer-link a {
 	color: inherit;
 	opacity: 0.8;
 	text-decoration: underline;
 	transition: opacity 0.3s ease;
 }
 
-#dcb-footer-link a:hover {
+#pcdelicoba-footer-link a:hover {
 	opacity: 1;
 }
 
 /* Footer link container */
-#dcb-footer-link.dcb-footer-center {
+#pcdelicoba-footer-link.pcdelicoba-footer-center {
 	text-align: center;
 	margin: 20px 0;
 	font-size: 13px;
 }
 
 /* Shortcode & global triggers */
-.dcb-open,
-[data-dcb-open],
-.dcb-reset,
-[data-dcb-reset] {
+.pcdelicoba-open,
+[data-pcdelicoba-open],
+.pcdelicoba-reset,
+[data-pcdelicoba-reset] {
 	cursor: pointer;
 	text-decoration: underline;
 	color: inherit;
@@ -159,39 +159,39 @@
 	transition: opacity 0.3s ease;
 }
 
-.dcb-open:hover,
-[data-dcb-open]:hover,
-.dcb-reset:hover,
-[data-dcb-reset]:hover {
+.pcdelicoba-open:hover,
+[data-pcdelicoba-open]:hover,
+.pcdelicoba-reset:hover,
+[data-pcdelicoba-reset]:hover {
 	opacity: 1;
 }
 
 /* Optional: differentiate reset visually */
-.dcb-reset,
-[data-dcb-reset] {
+.pcdelicoba-reset,
+[data-pcdelicoba-reset] {
 	opacity: 0.7;
 	font-size: 0.95em;
 }
 
 /* Animation */
-@keyframes dcb-slide-in {
+@keyframes pcdelicoba-slide-in {
 	from { opacity: 0; transform: translateY(10px); }
 	to { opacity: 1; transform: translateY(0); }
 }
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
-	#dcb-cookie-banner {
+	#pcdelicoba-cookie-banner {
 		font-size: 14px;
 		padding: 0.8em;
 	}
 
-	.dcb-buttons {
+	.pcdelicoba-buttons {
 		flex-direction: column;
 		align-items: center; 
 	}
 
-	.dcb-buttons .dcb-btn {
+	.pcdelicoba-buttons .pcdelicoba-btn {
 		width: auto;        /
 		max-width: 240px;   
 	}

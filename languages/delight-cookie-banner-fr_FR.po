@@ -85,11 +85,11 @@ msgstr "Personnalisez l’apparence, le texte et le comportement de votre banni�
 msgid "This preview reflects your current settings. Hover the buttons to see hover colors. Save to persist changes."
 msgstr "Cet aperçu reflète vos paramètres actuels. Survolez les boutons pour voir les couleurs au survol. Enregistrez pour appliquer les modifications."
 
-msgid "Automatically display a “Change cookie settings” link in the footer. You can also insert the same link anywhere on your site using the [dcb_open] shortcode, or add a reset link with [dcb_reset]."
-msgstr "Afficher automatiquement le lien « Modifier les paramètres des cookies » dans le pied de page. Vous pouvez également insérer le même lien n’importe où sur votre site avec le shortcode [dcb_open], ou ajouter un lien de réinitialisation avec [dcb_reset]."
+msgid "Automatically display a “Change cookie settings” link in the footer. You can also insert the same link anywhere on your site using the [pcdelicoba_open] shortcode, or add a reset link with [pcdelicoba_reset]."
+msgstr "Afficher automatiquement le lien « Modifier les paramètres des cookies » dans le pied de page. Vous pouvez également insérer le même lien n’importe où sur votre site avec le shortcode [pcdelicoba_open], ou ajouter un lien de réinitialisation avec [pcdelicoba_reset]."
 
-msgid "Alternatively, use [dcb_open] or [dcb_reset]."
-msgstr "Vous pouvez également utiliser [dcb_open] ou [dcb_reset]."
+msgid "Alternatively, use [pcdelicoba_open] or [pcdelicoba_reset]."
+msgstr "Vous pouvez également utiliser [pcdelicoba_open] ou [pcdelicoba_reset]."
 
 msgid "Settings have been reset to defaults."
 msgstr "Les paramètres ont été réinitialisés aux valeurs par défaut."

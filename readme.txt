@@ -1,11 +1,11 @@
 === Delight Cookie Banner ===
-Contributors: PC Delight
-Donate link: https://pcdelight.ch
+Contributors: pcdelight
+Donate link: https://paypal.me/pcdelight
 Tags: cookies, gdpr, privacy, banner, woocommerce
 Requires at least: 6.0
-Tested up to: 6.8
+Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 1.1.0
+Stable tag: 1.2.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -33,7 +33,7 @@ Language names are displayed automatically in a user-friendly format (e.g. Deuts
 - Reject Button can be shown or hidden via settings  
 - Shortcodes for reopening or resetting the banner  
 - Optional automatic footer link  
-- Uses a small functional cookie to remember the visitor’s choice (`dcb_consent`)  
+- Uses a small functional cookie to remember the visitor’s choice (`pcdelicoba_consent`)  
 - Works with any WordPress theme and WooCommerce  
 - Multilingual ready (English, German, French, Italian)  
 - No jQuery, no tracking, no external dependencies  
@@ -41,7 +41,7 @@ Language names are displayed automatically in a user-friendly format (e.g. Deuts
 ### How it works
 When a visitor loads your site for the first time, a simple notice appears informing them that the site uses cookies.  
 The visitor can dismiss the banner by clicking “Accept” or “Reject.”  
-This choice is stored in a small functional cookie (`dcb_consent`) so the banner doesn’t reappear on every page load.  
+This choice is stored in a small functional cookie (`pcdelicoba_consent`) so the banner doesn’t reappear on every page load.  
 No tracking, analytics, or marketing cookies are used or blocked by the plugin itself.
 
 ### Admin options
@@ -56,11 +56,10 @@ Under **Settings → Delight Cookie Banner**, you can customize:
 - Option to show or hide the Reject button  
 
 ### Shortcodes
-- `[dcb_open label="Change cookie settings"]` shows the banner again so users can review the message.  
-- `[dcb_reset label="Reset cookie settings"]` deletes the stored consent and displays the banner again.
+- `[pcdelicoba_open label="Change cookie settings"]` shows the banner again so users can review the message.  
+- `[pcdelicoba_reset label="Reset cookie settings"]` deletes the stored consent and displays the banner again.
 
 Shortcodes can be used anywhere – in posts, widgets, or page builder elements.  
-You can also use the CSS classes `.dcb-open` and `.dcb-reset` on your own links or buttons.
 
 == Installation ==
 
@@ -74,7 +73,7 @@ You can also use the CSS classes `.dcb-open` and `.dcb-reset` on your own links 
 No. Delight Cookie Banner is a notice tool only. It informs visitors that cookies are used but does not manage or block third-party scripts.
 
 = Does this plugin set cookies? =  
-Yes, it sets one small functional cookie named `dcb_consent` to remember whether the visitor closed the banner.
+Yes, it sets one small functional cookie named `pcdelicoba_consent` to remember whether the visitor closed the banner.
 
 = Is it GDPR and CCPA compliant? =  
 The plugin helps website owners meet transparency requirements by displaying a clear notice about cookie usage.  
@@ -84,10 +83,10 @@ However, full legal compliance depends on how your website handles cookies and t
 Yes, it integrates seamlessly with WooCommerce and any WordPress theme.
 
 = How can I add the notice link manually? =  
-You can insert `[dcb_open]` anywhere – for example, in the footer or a text widget.
+You can insert `[pcdelicoba_open]` anywhere – for example, in the footer or a text widget.
 
 = Can I reset the notice? =  
-Yes. Add `[dcb_reset]` to any page or post. It clears the saved consent and displays the banner again.
+Yes. Add `[pcdelicoba_reset]` to any page or post. It clears the saved consent and displays the banner again.
 
 == Screenshots ==
 1. Simple cookie notice on the front end  
@@ -95,6 +94,15 @@ Yes. Add `[dcb_reset]` to any page or post. It clears the saved consent and disp
 3. Example of the footer link and shortcodes  
 
 == Changelog ==
+
+= 1.2.0 =
+- Added `[pcdelicoba_open]` shortcode to open the consent dialog  
+- Added `[pcdelicoba_reset]` shortcode to reset cookie preferences  
+- Updated plugin prefix to a fully unique namespace for improved compatibility  
+- Improved security and nonce handling across the plugin  
+- Corrected plugin metadata and updated donate link  
+- Enhanced settings page and live preview behavior  
+- General accessibility, styling improvements, and minor refinements  
 
 = 1.1.0 =
 - Added `[dcb_reset]` shortcode to clear consent  
